@@ -25,6 +25,16 @@ $(document).ready(function () {
         var addr2 = $('#adres2');
         var ad2=$('.ad2');
 
+        var town = $('#town');
+        var city=$('.city');
+
+        var post = $('#post');
+        var pc=$('.pc');
+
+        var ph = $('#ph');
+        var phone=$('.phone');
+
+
         if ((imie.val().length >= 2) && (imie.val().length <= 10)) {
             fn.hide();
         }
@@ -32,7 +42,7 @@ $(document).ready(function () {
             fn.show();
         }
 
-        if ((nazwisko.val().length >= 1) && (nazwisko.val().length <= 10)) {
+        if ((nazwisko.val().length >= 1) && (nazwisko.val().length <= 30)) {
             ln.hide();
         }
         else {
@@ -67,11 +77,50 @@ $(document).ready(function () {
             ad1.show();
         }
 
+
         if ((addr2.val().length >= 5) && (addr2.val().length <= 20)) {
             ad2.hide();
         }
         else {;
             ad2.show();
+        }
+
+        if ((town.val().length >= 5) && (town.val().length <= 20)) {
+            city.hide();
+        }
+        else {;
+            city.show();
+        }
+
+        if ($.isNumeric(post.val()))
+        {
+            pc.hide();
+        }
+        else {;
+            pc.show();
+        }
+        if ($.isNumeric(ph.val()))
+        {
+            phone.hide();
+        }
+        else {;
+            phone.show();
+        }
+        if ( $('#cz1').is(':checked'))
+        {
+
+        }
+        else {
+
+            alert('you must agree age')
+        }
+
+        if ( $('#cz2').is(':checked'))
+        {
+            phone.hide();
+        }
+        else {
+            alert('you must checked box')
         }
 
     }
