@@ -1,0 +1,171 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.kontener {
+  width: 59%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.grid-container {
+  width:100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  };
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*=col-] {
+  min-height: 1px;
+  float: left;
+
+}
+@media (max-width: 750px) {
+  .grid-container [class*=col-] {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (max-width: 750px) {
+  #logo  {
+    display: none;
+  }
+}
+
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+
+
+input{
+  width: 362px;
+  height: 34px;
+  border:2px solid black;
+}
+
+#grey{
+  width: 100%;
+  height: 300px;
+  background-color: gray;
+  padding-top: 40px;
+}
+
+#logo{
+  width: 100px;
+  height: 100px;
+  border: 1px solid white;
+  color:white;
+  margin:0 auto;
+}
+#Camp{
+  color: white;
+  width: 237px;
+  height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-size: 30px;
+}
+#im{
+  text-align: center;
+  margin: 0 auto;
+  color:white;
+  margin-top:20px;
+}
+
+
+#cz1,#cz2 {
+  width: 161px;
+  height: 23px;
+  display: block;
+  margin-top: 15px;
+}
+.bloname{
+  background-color: black;
+  width: 362px;
+  height: 34px;
+  color:white;
+}
+
+.email ,.fn,.ln,.pass,.cpass,.ad1,.ad2,.city,.pc,.phone{
+  display: block;
+}
+.toperror{
+  width: 100%;
+  height: 20px;
+  background-color: black;
+}
+
+button{
+
+  width: 315px;
+  height: 40px;
+  background-color: black;
+  color: white;
+}
+
+.email ,.fn,.ln,.pass,.cpass,.ad1,.ad2,.city,.pc,.phone {
+  display: none;
+
+}
